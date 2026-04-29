@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amruta Salagare | AI & ML Engineer</title>
+    <meta name="description" content="Portfolio of Amruta Salagare, AI & ML Engineer specializing in Computer Vision, Deep Learning, and IoT.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <nav class="navbar glass">
+        <a href="#home" class="logo">Amruta<span>.ai</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="{{ url_for('static', filename='assets/Amruta_Resume.pdf') }}" class="btn-download" download>Resume <i class="ph ph-download-simple"></i></a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <!-- Background Animated Shapes -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm</p>
+                <h1>Amruta Salagare</h1>
+                <h2 class="dynamic-text">I build <span id="typewriter"></span></h2>
+                <p class="hero-desc">An aspiring AI & ML Engineer from ATME College of Engineering, passionate about solving real-world problems using Computer Vision, Deep Learning, and Edge AI.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn primary">Let's Connect</a>
+                    <a href="#projects" class="btn secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper glass">
+                    <img src="{{ url_for('static', filename='assets/Profile.jpeg') }}" alt="Amruta Salagare" id="profile-pic">
+                    <div class="floating-badge badge1"><i class="ph ph-brain"></i> AI/ML</div>
+                    <div class="floating-badge badge2"><i class="ph ph-code"></i> Python</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">01. <span>About Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text glass">
+                    <p>I am a final-year <strong>Computer Science Engineering student specializing in AI & ML (Hons.)</strong> at ATME College of Engineering, Mysore, with a CGPA of 8.9.</p>
+                    <p>I have a strong foundation in building scalable end-to-end Machine Learning pipelines, working extensively with edge devices, computer vision technologies (YOLO, MediaPipe), and deep learning frameworks.</p>
+                    <p>My journey in tech is driven by curiosity. Whether I'm deploying an intelligent traffic control system on a edge Raspberry Pi or creating secure backend workflows, I love blending AI models with functional software architectures.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title">02. <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item glass">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">April 2026 - Present</div>
+                    <h3>Selected Participant</h3>
+                    <h4>McKinsey Forward Program</h4>
+                    <p>Selected for the McKinsey Forward program, a learning journey focusing on leadership, business acumen, and digital skills.</p>
+                    <a href="{{ url_for('static', filename='assets/Mckinsey_Forward_program.png') }}" target="_blank" class="btn secondary" style="margin-top: 10px; display: inline-block; padding: 6px 15px; font-size: 0.9rem;">View Selection Details <i class="ph ph-arrow-square-out"></i></a>
+                </div>
+                <div class="timeline-item glass">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2026 - Present</div>
+                    <h3>Intern</h3>
+                    <h4>Hindustan Aeronautics Limited (HAL) - Overhaul Division, Bengaluru</h4>
+                    <p>Designed and deployed an internal web solution for the Customer Service department, resolving real-time communication and documentation gaps across teams.</p>
+                    <p>Built an intranet-based tool for the Overhaul Division to standardise folder structures and improve file accessibility, reducing time spent locating cross-department documents.</p>
+                </div>
+                <div class="timeline-item glass">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2024 - Present</div>
+                    <h3>Prompt Engineer (Freelance)</h3>
+                    <h4>Soul AI (A product of Deccan AI) - Remote</h4>
+                    <p>Reviewed and scored AI model outputs across multiple LLMs using standardized rubrics, contributing to improved answer quality and consistency.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">03. <span>Featured Projects</span></h2>
+            <div class="project-grid">
+                <a href="https://github.com/AmrutaSalagare/Traffic_Control" target="_blank" class="project-card glass custom-link">
+                    <div class="project-header">
+                        <i class="ph ph-traffic-cone project-icon"></i>
+                        <div class="project-links">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <h3>Intelligent Traffic Management</h3>
+                    <p class="project-tech">Computer Vision • YOLOv11 • ONNX • Raspberry Pi</p>
+                    <p class="project-desc">Real-time edge-AI traffic system using YOLOv11 on CPU-based Raspberry Pi. Achieved 3–5× inference speedup and >93% vehicle counting accuracy. Integrated emergency-aware signal control.</p>
+                </a>
+
+                <a href="https://github.com/AmrutaSalagare/StreeRaksha" target="_blank" class="project-card glass custom-link">
+                    <div class="project-header">
+                        <i class="ph ph-shield-check project-icon"></i>
+                        <div class="project-links">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <h3>StreeRaksha</h3>
+                    <p class="project-tech">IoT • OpenCV • FastAPI • MediaPipe</p>
+                    <p class="project-desc">Real-time threat detection system using YOLO, MediaPipe, and MobileNetV2 on edge IoT for live CCTV person tracking. End-to-end alerting platform with a FastAPI backend.</p>
+                </a>
+
+                <a href="https://github.com/AmrutaSalagare/AgroBalance" target="_blank" class="project-card glass custom-link">
+                    <div class="project-header">
+                        <i class="ph ph-plant project-icon"></i>
+                        <div class="project-links">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <h3>AgroBalance</h3>
+                    <p class="project-tech">IoT • Machine Learning • Flask</p>
+                    <p class="project-desc">Precision farming solution using real-time NPK soil sensors with ML pipelines for crop recommendations. Deployed full-stack system with Flask APIs and IoT hardware integration.</p>
+                </a>
+
+                <a href="https://github.com/AmrutaSalagare/Lung-Disease-Classifier" target="_blank" class="project-card glass custom-link">
+                    <div class="project-header">
+                        <i class="ph ph-lungs project-icon"></i>
+                        <div class="project-links">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <h3>Lung Disease Classifier</h3>
+                    <p class="project-tech">Deep Learning • VGG19 • Streamlit</p>
+                    <p class="project-desc">CNN-based classifier using VGG19 transfer learning for multi-class chest X-ray diagnosis. Achieved 96% accuracy. Deployed a lightweight Streamlit web app for real-time predictions.</p>
+                </a>
+
+                <a href="https://github.com/AmrutaSalagare/RecruitFlow" target="_blank" class="project-card glass custom-link">
+                    <div class="project-header">
+                        <i class="ph ph-users-three project-icon"></i>
+                        <div class="project-links">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <h3>RecruitFlow (Enterprise ATS)</h3>
+                    <p class="project-tech">React • Python • PostgreSQL • Docker</p>
+                    <p class="project-desc">A production-ready Enterprise Applicant Tracking System featuring an AI-powered Job Description generator, approval chains, and Kanban candidate pipelines.</p>
+                </a>
+
+                <a href="https://github.com/AmrutaSalagare/financial-document-analyzer" target="_blank" class="project-card glass custom-link">
+                    <div class="project-header">
+                        <i class="ph ph-file-pdf project-icon"></i>
+                        <div class="project-links">
+                            <i class="ph ph-arrow-up-right"></i>
+                        </div>
+                    </div>
+                    <h3>Financial Document Analyzer</h3>
+                    <p class="project-tech">NLP • Python • LLMs</p>
+                    <p class="project-desc">Automated analyzer for financial datasets and documents, extracting key insights and performing contextual sentiment analysis using NLP pipelines.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">04. <span>Skills & Technologies</span></h2>
+            <div class="skills-container glass">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>Python</span><span>C</span><span>SQL</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Libraries & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span><span>PyTorch</span><span>Keras</span><span>Scikit-learn</span>
+                        <span>NumPy</span><span>Pandas</span><span>OpenCV</span><span>FastAPI</span>
+                        <span>Flask</span><span>Streamlit</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Databases</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span><span>Git</span><span>GitHub</span><span>VS Code</span>
+                        <span>Jupyter</span><span>Tableau</span><span>Power BI</span><span>Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2 class="section-title">05. <span>Extracurricular, Awards & Certifications</span></h2>
+            
+            <div class="split-layout">
+                <div class="split-col glass">
+                    <h3 class="split-col-title"><i class="ph ph-users-three"></i> Leadership & Events</h3>
+                    <ul class="fancy-list">
+                        <li>
+                            <strong>Program Head</strong>
+                            <span>IEEE Student Branch Chapter, ATMECE</span>
+                        </li>
+                        <li>
+                            <strong>Stage Committee Head</strong>
+                            <span>IET On Campus, ATMECE</span>
+                        </li>
+                        <li>
+                            <strong>Techavishkar 2.0 Hackathon Organizer</strong>
+                            <span>State-level hackathon with 200+ participants, in collaboration with IEEE, IET</span>
+                        </li>
+                        <li>
+                            <strong>Mini Project Symposium Organizer</strong>
+                            <span>State-level symposium by IEEE CEDA & IEEE ATMECE</span>
+                        </li>
+                        <li>
+                            <strong>Dept. Technical Fest Organizer (CSE-AIML)</strong>
+                            <span>In collaboration with IET, featuring tech talks, workshops, and tech games</span>
+                        </li>
+                        <li>
+                            <strong>Events Organized</strong>
+                            <span>Logo launch of IEEE ATME Student Branch, Inauguration of IET ATME on campus, and many more technical events and workshops</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="split-col glass">
+                    <h3 class="split-col-title"><i class="ph ph-trophy"></i> Awards & Achievements</h3>
+                    <ul class="fancy-list">
+                        <li>
+                            <strong><a href="https://drive.google.com/file/d/1PFttmZav3WdFED4RiyOMyhdNDfWG-4x2/view?usp=sharing" target="_blank" style="color: #fff; text-decoration: underline; text-underline-offset: 2px;">Best Volunteer Award</a></strong>
+                            <span>IET Bangalore Network (2025)</span>
+                        </li>
+                        <li>
+                            <strong><a href="https://drive.google.com/file/d/1LzrGzYJjx8jNrFXSg-FN1-_GLIBjBKaI/view?usp=sharing" target="_blank" style="color: #fff; text-decoration: underline; text-underline-offset: 2px;">Winner</a></strong>
+                            <span>IET IGNIDE: Code for Future competition (org. by IET Bangalore/Hyderabad & Arcadis/Balfour Beatty)</span>
+                        </li>
+                        <li>
+                            <strong><a href="https://drive.google.com/file/d/14k3X5DZ5SwNRFqnKmJiW5ncbAByFlzAR/view?usp=sharing" target="_blank" style="color: #fff; text-decoration: underline; text-underline-offset: 2px;">Runner-up</a></strong>
+                            <span>Code Battle 2K25 Hackathon</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="split-col glass" style="grid-column: 1 / -1; margin-top: 1rem;">
+                    <h3 class="split-col-title"><i class="ph ph-certificate"></i> Certifications</h3>
+                    <ul class="fancy-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                        <li><a href="https://drive.google.com/file/d/1a0SdLVlYtxz9HyGk22uahkN91cEhHHdm/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Building LLM Applications with Prompt Engineering</a></li>
+                        <li><a href="https://drive.google.com/file/d/1oFF7yYrlQUQBi9KM3IAC-14yyW3vkqly/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Explore Machine Learning with TensorFlow</a></li>
+                        <li><a href="https://drive.google.com/file/d/1bg77kVEPqjYmMLcW8RByLbMu2DP22jU8/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Introduction to Oracle – SQL</a></li>
+                        <li><a href="https://drive.google.com/file/d/1tTiO1P7rMCUTuiuRQeWAN2utBso5b6S2/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Analytics using Tableau</a></li>
+                        <li><a href="https://drive.google.com/file/d/1gcJ4b2qyb4rDKW57Weiaasd0OoFsYLaN/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Database and SQL</a></li>
+                        <li><a href="https://drive.google.com/file/d/1pOrImVNW84ysWHh6eieY6e3WwPxtx8MW/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Python for Data Science</a></li>
+                        <li><a href="https://drive.google.com/file/d/1notmjYDQjFGqL-A0M8LpMKp_CR7CtZ7_/view?usp=drive_link" target="_blank" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;">Web Development</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">06. <span>Get In Touch</span></h2>
+            <div class="contact-box glass">
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Feel free to reach out to me directly!</p>
+                <div class="contact-info">
+                    <a href="mailto:amrutasalagare2609@gmail.com" class="contact-item"><i class="ph ph-envelope-simple"></i> amrutasalagare2609@gmail.com</a>
+                    <a href="tel:9008008973" class="contact-item"><i class="ph ph-phone"></i> 900 800 8973</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/amruta-salagare-3a171325b/" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/AmrutaSalagare" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with <i class="ph-fill ph-heart" style="color: #ff3b6a;"></i> & Flask by Amruta Salagare</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

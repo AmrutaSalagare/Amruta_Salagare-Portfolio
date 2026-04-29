@@ -1,0 +1,52 @@
+AMRUT A   SALAGARE  
+9008008973  | amrutasalagare2609@gmail.com  | LinkedIn  | Github  
+                                                         
+EDUCATION  
+ 
+ATME College of Engineering, Mysore                                                                                    2022  - 2026  
+Bachelor of Engineering, CSE in AI&ML (Hons.)                                                                                      CGPA – 8.9 
+EXPERIENCE  
+ 
+Hindustan Aeronautics Limited (HAL)  Jan 2026 - Present  
+Intern                                                                                                                                                                 Bengaluru  
+Soul AI                                                                                                                              Nov 2024  – Present  
+Prompt Engineer  (Freelance)                                                                                                                                                         Remote 
+ Reviewed and scored AI model outputs  across multiple LLMs using standardized rubrics contributing to 
+improved answer quality and consistency.  
+PROJECTS  
+ 
+Intelligent Traffic Management System  | Computer Vision                                                          Repo Link  
+ Built a real -time edge -AI traffic system using YOLOv11 (ONNX) on CPU -based Raspberry Pi, achieving 
+3–5× inference speedup and >93% vehicle counting accuracy via ONNX Runtime, ROI filtering, and 
+centroid tr acking.  
+ Integrated emergency -aware signal control with ambulance detection, dynamic timing logic, and a real -
+time monitoring dashboard.  
+StreeRaksha - Women’s Safety platform | AI                                                                           Repo Link  
+ Architected a real -time threat detection system using YOLO, MediaPipe, and MobileNetV2 on edge IoT 
+(Raspberry Pi) for live CCTV -based person tracking and gender reclassification.  
+ Delivered end -to-end alerting platform with FastAPI backend, real -time das hboards, and automated 
+evidence logging.  
+AgroBalance – AI-Powered Smart Farming Sy stem | IoT                                                       Repo Link  
+ Engineered a precision farming solution using real -time NPK soil sensors with ML pip elines (Neural 
+Networks, Random Forest) for automated crop and fertilizer recommendations.  
+ Deployed a full -stack system with Flask APIs, IoT hardware integration, and web/mobile interfaces.  
+Lung Disease classification | Deep Learning                                                                                Repo Link  
+ Designed a CNN -based classifier using VGG19 transfer learning for multi -class chest X -ray diagnosis, 
+achieving 96% accuracy with strong precision, recall, and F1 -score via data augmentation.  
+ Deployed  a lightweight Streamlit web app for real -time lung disease prediction.  
+SKILLS  
+ 
+ Languages:  Python, C, SQL , HTML, CSS.  
+ Tools: VS Code, Git, GitHub , Jupyter N otebook, Google C olab, Tableau, Power BI . 
+ Libraries & Frameworks:  NumPy, Pandas, TensorFlow, Keras,  PyTorch , Scikit-learn, Stream lit, OpenCV , 
+FastAPI, Flask , MongoDB . 
+ Coursework:  Operating Systems,  DBMS, Computer Networks, OOP  
+EXTRACURRICULAR   
+ 
+ Program Head  - IEEE Student Branch Chapter, Stage Committee Head  - IET On Campus, ATMECE   
+ Runner -up - Code Battle 2K24 | Participated in multiple national -level hackathons  
+ Hackathon Organizer - Tech Avishkar 2.0  | Led a 200+ participant event with workshops and expert talks  
+ Certifications – Building LLM Applications with Prompt Engineeri ng | Explor e Machine Learning with 
+TensorFlow  | Introduction to Oracle – SQL  | Analytics using Tableau  | Database and SQL  | Web 
+Development  | Python for Data Science  
+
