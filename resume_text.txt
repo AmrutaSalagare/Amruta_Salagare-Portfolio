@@ -4,10 +4,10 @@ AMRUT A   SALAGARE
 EDUCATION  
  
 ATME College of Engineering, Mysore                                                                                    2022  - 2026  
-Bachelor of Engineering, CSE in AI&ML (Hons.)                                                                                      CGPA – 8.9 
+Bachelor of Engineering, CSE in AI&ML (Hons.) – CSE AI/ML Graduate                                                     CGPA – 8.9 
 EXPERIENCE  
  
-Hindustan Aeronautics Limited (HAL)  Jan 2026 - Present  
+Hindustan Aeronautics Limited (HAL)  Jan 2026 - May 2026  
 Intern                                                                                                                                                                 Bengaluru  
 Soul AI                                                                                                                              Nov 2024  – Present  
 Prompt Engineer  (Freelance)                                                                                                                                                         Remote 
@@ -39,8 +39,7 @@ SKILLS
  Languages:  Python, C, SQL , HTML, CSS.  
  Tools: VS Code, Git, GitHub , Jupyter N otebook, Google C olab, Tableau, Power BI . 
  Libraries & Frameworks:  NumPy, Pandas, TensorFlow, Keras,  PyTorch , Scikit-learn, Stream lit, OpenCV , 
-FastAPI, Flask , MongoDB . 
- Coursework:  Operating Systems,  DBMS, Computer Networks, OOP  
+FastAPI, Flask , MongoDB .  Artistic Skills:  Sketching, Painting, Color Theory, Composition . Coursework:  Operating Systems,  DBMS, Computer Networks, OOP  
 EXTRACURRICULAR   
  
  Program Head  - IEEE Student Branch Chapter, Stage Committee Head  - IET On Campus, ATMECE   

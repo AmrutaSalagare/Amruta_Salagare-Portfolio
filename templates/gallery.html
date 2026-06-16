@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amruta's Gallery | Sketches & Paintings</title>
+    <meta name="description" content="Gallery of sketches and paintings by Amruta Salagare - Blend of creative visual art and technical expertise.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <nav class="navbar glass">
+        <a href="/" class="logo">Amruta<span>.ai</span></a>
+        <ul class="nav-links">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#experience">Experience</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/gallery" class="active">Gallery</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#achievements">Achievements</a></li>
+            <li><a href="{{ url_for('static', filename='assets/Amruta_Resume.pdf') }}" class="btn-download" download>Resume <i class="ph ph-download-simple"></i></a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <!-- Background Animated Shapes -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+
+    <main>
+        <section class="gallery-hero">
+            <div class="gallery-hero-content">
+                <p class="greeting">Welcome to my</p>
+                <h1>Creative Gallery</h1>
+                <p class="hero-desc">Explore my sketches, paintings, and visual artwork. A journey through colors, compositions, and creative expressions.</p>
+                <div class="hero-cta">
+                    <a href="/" class="btn secondary"><i class="ph ph-arrow-left"></i> Back to Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="gallery-section-title">My Artwork</h2>
+                <p class="gallery-subtitle">Click on any artwork to view in full</p>
+                
+                <div class="full-gallery-grid">
+                    <!-- Artwork Item 1: Baby Sketch -->
+                    <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Baby Sketch.jpeg') }}', 'Baby Sketch', 'SKETCH', 'A delicate sketch capturing innocence and tenderness through expressive lines. This piece explores the gentle features of a baby, emphasizing soft expressions and the beauty of vulnerability.')">
+                        <div class="artwork-image-container">
+                            <img src="{{ url_for('static', filename='assets/Baby Sketch.jpeg') }}" alt="Baby Sketch">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Baby Sketch</h3>
+                            <p class="artwork-type">SKETCH</p>
+                            <p class="artwork-desc">A tender sketch capturing the innocence and vulnerability of infancy through expressive line work and composition.</p>
+                        </div>
+                    </div>
+
+                    <!-- Artwork Item 2: Buddha Painting -->
+                    <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Buddha Painting.jpeg') }}', 'Serenity in Stone', 'PAINTING', 'A contemplative painting exploring themes of peace and enlightenment. The use of warm earth tones and careful brushwork creates a sense of calm and spiritual depth, reflecting inner tranquility.')">
+                        <div class="artwork-image-container">
+                            <img src="{{ url_for('static', filename='assets/Buddha Painting.jpeg') }}" alt="Serenity in Stone">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Serenity in Stone</h3>
+                            <p class="artwork-type">PAINTING</p>
+                            <p class="artwork-desc">A contemplative painting exploring peace and enlightenment through warm earth tones and spiritual symbolism.</p>
+                        </div>
+                    </div>
+
+                    <!-- Artwork Item 3: Old Man Sketch -->
+                    <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Old Man Sketch.jpeg') }}', 'Stories of Time', 'SKETCH', 'A realistic portraiture sketch capturing the wisdom and character etched into an elderly face. Through careful shading and detail work, this piece conveys a lifetime of experience and stories.')">
+                        <div class="artwork-image-container">
+                            <img src="{{ url_for('static', filename='assets/Old Man Sketch.jpeg') }}" alt="Stories of Time">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Stories of Time</h3>
+                            <p class="artwork-type">SKETCH</p>
+                            <p class="artwork-desc">A realistic portraiture capturing wisdom and character, revealing the stories etched into a lifetime of experience.</p>
+                        </div>
+                    </div>
+
+                    <!-- Artwork Item 4: Old Woman Sketch -->
+                    <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Old Womwn Sketch.jpeg') }}', 'Dignity & Grace', 'SKETCH', 'An intimate character study of an elderly woman, exploring the interplay of shadow and light to reveal emotion and strength. The detailed rendering showcases resilience and quiet power.')">
+                        <div class="artwork-image-container">
+                            <img src="{{ url_for('static', filename='assets/Old Womwn Sketch.jpeg') }}" alt="Dignity & Grace">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Dignity & Grace</h3>
+                            <p class="artwork-type">SKETCH</p>
+                            <p class="artwork-desc">An intimate character study exploring resilience and quiet power through careful shading and emotional depth.</p>
+                        </div>
+                    </div>
+
+                    <!-- Artwork Item 5: Realistic Eye Sketch -->
+                    <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Realistic Eye Sketch.jpeg') }}', 'Window to the Soul', 'SKETCH', 'A highly detailed pencil sketch focusing on the complexity and beauty of the human eye. This study demonstrates mastery of realism, capturing light reflections and the subtle textures that bring the eye to life.')">
+                        <div class="artwork-image-container">
+                            <img src="{{ url_for('static', filename='assets/Realistic Eye Sketch.jpeg') }}" alt="Window to the Soul">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Window to the Soul</h3>
+                            <p class="artwork-type">SKETCH</p>
+                            <p class="artwork-desc">A highly detailed study of the human eye, demonstrating mastery of realism and capturing the intricate play of light and shadow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-contact">
+            <div class="container">
+                <h2>Interested in commissioning artwork or collaborating?</h2>
+                <p>I'm always open to discussing new creative projects and opportunities. Reach out to connect!</p>
+                <div class="gallery-contact-links">
+                    <a href="mailto:amrutasalagare2609@gmail.com" class="btn primary"><i class="ph ph-envelope-simple"></i> Get in Touch</a>
+                    <a href="/" class="btn secondary"><i class="ph ph-arrow-left"></i> Back to Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="art-store-upcoming">
+            <div class="container">
+                <div class="upcoming-box glass">
+                    <i class="ph ph-storefront"></i>
+                    <h2>🎨 Art Store - Coming Soon!</h2>
+                    <p>To purchase any of my artwork, visit my dedicated art store website (launching soon). Get original
+                        sketches, paintings, and custom commissions.</p>
+                    <div class="upcoming-status">
+                        <span class="status-badge">UNDER DEVELOPMENT</span>
+                        <p class="sub-text">Art commerce platform coming in late 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Artwork Modal -->
+    <div id="artworkModal" class="artwork-modal" onclick="closeArtworkModal(event)">
+        <div class="modal-content glass" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeArtworkModal()"><i class="ph ph-x"></i></button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalType" class="modal-type"></p>
+                    <p id="modalDescription" class="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with <i class="ph-fill ph-heart" style="color: #ff3b6a;"></i> & Flask by Amruta Salagare</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

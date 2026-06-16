@@ -78,3 +78,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// Artwork Modal Functions
+function openArtworkModal(imageSrc, title, type, description) {
+    const modal = document.getElementById('artworkModal');
+    document.getElementById('modalImage').src = imageSrc;
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalType').textContent = type;
+    document.getElementById('modalDescription').textContent = description;
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeArtworkModal(event) {
+    const modal = document.getElementById('artworkModal');
+    if (event && event.target !== modal) return;
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeArtworkModal();
+    }
+});

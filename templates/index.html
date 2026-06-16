@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amruta Salagare | AI & ML Engineer</title>
-    <meta name="description" content="Portfolio of Amruta Salagare, AI & ML Engineer specializing in Computer Vision, Deep Learning, and IoT.">
+    <title>Amruta Salagare | AI & ML Engineer & Visual Artist</title>
+    <meta name="description" content="Portfolio of Amruta Salagare, AI & ML Engineer & Sketch Artist. Blending technology with creative visual design - Computer Vision, Deep Learning, IoT, and Digital Art.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- Phosphor Icons -->
@@ -17,6 +17,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="{{ url_for('static', filename='assets/Amruta_Resume.pdf') }}" class="btn-download" download>Resume <i class="ph ph-download-simple"></i></a></li>
@@ -36,7 +37,7 @@
                 <p class="greeting">Hi, I'm</p>
                 <h1>Amruta Salagare</h1>
                 <h2 class="dynamic-text">I build <span id="typewriter"></span></h2>
-                <p class="hero-desc">An aspiring AI & ML Engineer from ATME College of Engineering, passionate about solving real-world problems using Computer Vision, Deep Learning, and Edge AI.</p>
+                <p class="hero-desc">A CSE AI & ML Engineer & Sketch Artist from ATME College of Engineering, with a passion for technology and visual art. I blend analytical thinking with creative expression through paintings and sketches.</p>
                 <div class="hero-cta">
                     <a href="#contact" class="btn primary">Let's Connect</a>
                     <a href="#projects" class="btn secondary">View My Work</a>
@@ -55,9 +56,9 @@
             <h2 class="section-title">01. <span>About Me</span></h2>
             <div class="about-grid">
                 <div class="about-text glass">
-                    <p>I am a final-year <strong>Computer Science Engineering student specializing in AI & ML (Hons.)</strong> at ATME College of Engineering, Mysore, with a CGPA of 8.9.</p>
-                    <p>I have a strong foundation in building scalable end-to-end Machine Learning pipelines, working extensively with edge devices, computer vision technologies (YOLO, MediaPipe), and deep learning frameworks.</p>
-                    <p>My journey in tech is driven by curiosity. Whether I'm deploying an intelligent traffic control system on a edge Raspberry Pi or creating secure backend workflows, I love blending AI models with functional software architectures.</p>
+                    <p>I am a <strong>CSE AI & ML Graduate</strong> from ATME College of Engineering, Mysore, with a CGPA of 8.9, specializing in AI, Machine Learning, and Computer Vision. Beyond tech, I'm a passionate <strong>Sketch Artist & Painter</strong>, exploring creativity through various artistic mediums.</p>
+                    <p>I have a strong foundation in building scalable ML pipelines and deploying edge AI systems. My unique blend of technical expertise and artistic passion allows me to approach problems from multiple perspectives—bringing both analytical rigor and creative thinking to everything I do.</p>
+                    <p>My journey is driven by curiosity and the pursuit of excellence. Whether I'm optimizing inference on Raspberry Pi, architecting backend systems, or creating sketches and paintings, I love pushing boundaries and exploring new possibilities in both technology and art.</p>
                 </div>
             </div>
         </section>
@@ -75,7 +76,7 @@
                 </div>
                 <div class="timeline-item glass">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2026 - Present</div>
+                    <div class="timeline-date">Jan 2026 - May 2026</div>
                     <h3>Intern</h3>
                     <h4>Hindustan Aeronautics Limited (HAL) - Overhaul Division, Bengaluru</h4>
                     <p>Designed and deployed an internal web solution for the Customer Service department, resolving real-time communication and documentation gaps across teams.</p>
@@ -169,8 +170,19 @@
             </div>
         </section>
 
+        <section id="gallery" class="section">
+            <h2 class="section-title">04. <span>My Sketches & Paintings</span></h2>
+            <div class="gallery-cta-box glass">
+                <div class="gallery-cta-content">
+                    <i class="ph ph-palette gallery-cta-icon"></i>
+                    <p>Explore my collection of sketches, paintings, and creative artwork. A blend of artistic vision and technical precision.</p>
+                    <a href="/gallery" class="btn primary">View My Gallery <i class="ph ph-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+
         <section id="skills" class="section">
-            <h2 class="section-title">04. <span>Skills & Technologies</span></h2>
+            <h2 class="section-title">05. <span>Skills & Technologies</span></h2>
             <div class="skills-container glass">
                 <div class="skill-category">
                     <h3>Languages</h3>
@@ -193,11 +205,18 @@
                         <span>Jupyter</span><span>Tableau</span><span>Power BI</span><span>Linux</span>
                     </div>
                 </div>
+                <div class="skill-category" style="border-left: 3px solid #ff3b6a; padding-left: 1rem;">
+                    <h3>🎨 Artistic Skills</h3>
+                    <div class="skill-tags">
+                        <span>Sketching</span><span>Painting</span><span>Color Theory</span><span>Composition</span>
+                        <span>Visual Expression</span><span>Creative Thinking</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="achievements" class="section">
-            <h2 class="section-title">05. <span>Extracurricular, Awards & Certifications</span></h2>
+            <h2 class="section-title">06. <span>Extracurricular, Awards & Certifications</span></h2>
             
             <div class="split-layout">
                 <div class="split-col glass">
@@ -264,7 +283,7 @@
         </section>
 
         <section id="contact" class="section">
-            <h2 class="section-title">06. <span>Get In Touch</span></h2>
+            <h2 class="section-title">07. <span>Get In Touch</span></h2>
             <div class="contact-box glass">
                 <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Feel free to reach out to me directly!</p>
                 <div class="contact-info">
