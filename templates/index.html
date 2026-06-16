@@ -172,12 +172,50 @@
 
         <section id="gallery" class="section">
             <h2 class="section-title">04. <span>My Sketches & Paintings</span></h2>
-            <div class="gallery-cta-box glass">
-                <div class="gallery-cta-content">
-                    <i class="ph ph-palette gallery-cta-icon"></i>
-                    <p>Explore my collection of sketches, paintings, and creative artwork. A blend of artistic vision and technical precision.</p>
-                    <a href="/gallery" class="btn primary">View My Gallery <i class="ph ph-arrow-up-right"></i></a>
+            <p class="gallery-subtitle" style="text-align: center; margin-bottom: 40px; font-size: 1.1rem; color: var(--text-muted);">
+                A selection of my personal artwork, capturing themes of expression, serenity, and character.
+            </p>
+            
+            <div class="full-gallery-grid" style="margin-bottom: 50px;">
+                <!-- Artwork Item 1: Baby Sketch -->
+                <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Baby Sketch.jpeg') }}', 'Baby Sketch', 'SKETCH', 'A delicate sketch capturing innocence and tenderness through expressive lines. This piece explores the gentle features of a baby, emphasizing soft expressions and the beauty of vulnerability.')">
+                    <div class="artwork-image-container">
+                        <img src="{{ url_for('static', filename='assets/Baby Sketch.jpeg') }}" alt="Baby Sketch">
+                    </div>
+                    <div class="artwork-details">
+                        <h3>Baby Sketch</h3>
+                        <p class="artwork-type">SKETCH</p>
+                        <p class="artwork-desc">A tender sketch capturing the innocence and vulnerability of infancy through expressive line work and composition.</p>
+                    </div>
                 </div>
+
+                <!-- Artwork Item 2: Buddha Painting -->
+                <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Buddha Painting.jpeg') }}', 'Serenity in Stone', 'PAINTING', 'A contemplative painting exploring themes of peace and enlightenment. The use of warm earth tones and careful brushwork creates a sense of calm and spiritual depth, reflecting inner tranquility.')">
+                    <div class="artwork-image-container">
+                        <img src="{{ url_for('static', filename='assets/Buddha Painting.jpeg') }}" alt="Serenity in Stone">
+                    </div>
+                    <div class="artwork-details">
+                        <h3>Serenity in Stone</h3>
+                        <p class="artwork-type">PAINTING</p>
+                        <p class="artwork-desc">A contemplative painting exploring peace and enlightenment through warm earth tones and spiritual symbolism.</p>
+                    </div>
+                </div>
+
+                <!-- Artwork Item 3: Old Man Sketch -->
+                <div class="artwork-card glass" onclick="openArtworkModal('{{ url_for('static', filename='assets/Old Man Sketch.jpeg') }}', 'Stories of Time', 'SKETCH', 'A realistic portraiture sketch capturing the wisdom and character etched into an elderly face. Through careful shading and detail work, this piece conveys a lifetime of experience and stories.')">
+                    <div class="artwork-image-container">
+                        <img src="{{ url_for('static', filename='assets/Old Man Sketch.jpeg') }}" alt="Stories of Time">
+                    </div>
+                    <div class="artwork-details">
+                        <h3>Stories of Time</h3>
+                        <p class="artwork-type">SKETCH</p>
+                        <p class="artwork-desc">A realistic portraiture capturing wisdom and character, revealing the stories etched into a lifetime of experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="/gallery" class="btn primary">View Full Gallery <i class="ph ph-arrow-up-right"></i></a>
             </div>
         </section>
 
@@ -297,6 +335,23 @@
             </div>
         </section>
     </main>
+
+    <!-- Artwork Modal -->
+    <div id="artworkModal" class="artwork-modal" onclick="closeArtworkModal(event)">
+        <div class="modal-content glass" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeArtworkModal()"><i class="ph ph-x"></i></button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalType" class="modal-type"></p>
+                    <p id="modalDescription" class="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>Built with <i class="ph-fill ph-heart" style="color: #ff3b6a;"></i> & Flask by Amruta Salagare</p>
