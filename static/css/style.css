@@ -524,31 +524,6 @@ main {
     transform: scale(1.05);
 }
 
-/* Artistic Skills Enhancement */
-.skill-category.artistic-skills {
-    background: rgba(var(--art-pink-rgb), 0.08) !important;
-    border-radius: 12px;
-    padding: 20px !important;
-    border-left: 3px solid var(--art-pink) !important;
-}
-
-.skill-category.artistic-skills h3 {
-    color: var(--art-pink);
-    font-weight: 700;
-}
-
-.skill-category.artistic-skills .skill-tags span {
-    background: rgba(var(--art-pink-rgb), 0.15);
-    border: 1px solid rgba(var(--art-pink-rgb), 0.3);
-    color: var(--art-pink);
-}
-
-.skill-category.artistic-skills .skill-tags span:hover {
-    background: var(--art-pink);
-    color: #fff;
-    box-shadow: 0 0 15px rgba(var(--art-pink-rgb), 0.6);
-    transform: scale(1.1);
-}
 
 /* Gallery CTA Box (in Portfolio) */
 .gallery-cta-box {
