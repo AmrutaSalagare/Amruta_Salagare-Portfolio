@@ -9,7 +9,8 @@
     --glass-border: rgba(255, 255, 255, 0.08);
     --font-sans: 'Outfit', sans-serif;
     --font-mono: 'Fira Code', monospace;
-    --art-pink: #ff3b6a;
+    --art-pink: var(--accent);
+    --art-pink-rgb: 139, 92, 246;
     --art-orange: #ff9f43;
     --art-teal: #00d4aa;
 }
@@ -524,27 +525,28 @@ main {
 }
 
 /* Artistic Skills Enhancement */
-.skill-category[style*="border-left"] {
-    background: rgba(255, 59, 106, 0.08) !important;
+.skill-category.artistic-skills {
+    background: rgba(var(--art-pink-rgb), 0.08) !important;
     border-radius: 12px;
     padding: 20px !important;
+    border-left: 3px solid var(--art-pink) !important;
 }
 
-.skill-category[style*="border-left"] h3 {
+.skill-category.artistic-skills h3 {
     color: var(--art-pink);
     font-weight: 700;
 }
 
-.skill-category[style*="border-left"] .skill-tags span {
-    background: rgba(255, 59, 106, 0.15);
-    border: 1px solid rgba(255, 59, 106, 0.3);
+.skill-category.artistic-skills .skill-tags span {
+    background: rgba(var(--art-pink-rgb), 0.15);
+    border: 1px solid rgba(var(--art-pink-rgb), 0.3);
     color: var(--art-pink);
 }
 
-.skill-category[style*="border-left"] .skill-tags span:hover {
+.skill-category.artistic-skills .skill-tags span:hover {
     background: var(--art-pink);
     color: #fff;
-    box-shadow: 0 0 15px rgba(255, 59, 106, 0.6);
+    box-shadow: 0 0 15px rgba(var(--art-pink-rgb), 0.6);
     transform: scale(1.1);
 }
 
@@ -554,7 +556,7 @@ main {
     margin: 0 auto;
     padding: 60px 40px;
     text-align: center;
-    border: 2px solid rgba(255, 59, 106, 0.3);
+    border: 2px solid rgba(var(--art-pink-rgb), 0.3);
 }
 
 .gallery-cta-content {
@@ -656,15 +658,15 @@ main {
 
 .artwork-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 20px 50px rgba(255, 59, 106, 0.4);
+    box-shadow: 0 20px 50px rgba(var(--art-pink-rgb), 0.4);
     border-color: var(--art-pink);
 }
 
 .artwork-image-placeholder {
     width: 100%;
     height: 350px;
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.15), rgba(139, 92, 246, 0.15));
-    border-bottom: 2px solid rgba(255, 59, 106, 0.2);
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.15), rgba(139, 92, 246, 0.15));
+    border-bottom: 2px solid rgba(var(--art-pink-rgb), 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -674,7 +676,7 @@ main {
 }
 
 .artwork-card:hover .artwork-image-placeholder {
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.25), rgba(139, 92, 246, 0.25));
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.25), rgba(139, 92, 246, 0.25));
 }
 
 .artwork-image-placeholder i {
@@ -720,7 +722,7 @@ main {
 /* Gallery Contact Section */
 .gallery-contact {
     padding: 80px 20px;
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.1), rgba(139, 92, 246, 0.1));
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.1), rgba(139, 92, 246, 0.1));
     text-align: center;
     margin: 50px 20px;
     border-radius: 16px;
@@ -832,15 +834,15 @@ main {
 
 .gallery-item:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(255, 59, 106, 0.3);
+    box-shadow: 0 15px 40px rgba(var(--art-pink-rgb), 0.3);
     border-color: var(--art-pink);
 }
 
 .gallery-image-placeholder {
     width: 100%;
     height: 280px;
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.1), rgba(139, 92, 246, 0.1));
-    border-bottom: 2px solid rgba(255, 59, 106, 0.2);
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.1), rgba(139, 92, 246, 0.1));
+    border-bottom: 2px solid rgba(var(--art-pink-rgb), 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -850,7 +852,7 @@ main {
 }
 
 .gallery-item:hover .gallery-image-placeholder {
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.2), rgba(139, 92, 246, 0.2));
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.2), rgba(139, 92, 246, 0.2));
 }
 
 .gallery-image-placeholder i {
@@ -948,7 +950,7 @@ footer {
     right: 20px;
     width: 40px;
     height: 40px;
-    background: rgba(255, 59, 106, 0.1);
+    background: rgba(var(--art-pink-rgb), 0.1);
     border: 1px solid var(--art-pink);
     color: var(--art-pink);
     border-radius: 50%;
@@ -1024,7 +1026,7 @@ footer {
     height: 350px;
     overflow: hidden;
     border-radius: 12px;
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.1), rgba(139, 92, 246, 0.1));
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.1), rgba(139, 92, 246, 0.1));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1061,7 +1063,7 @@ footer {
 
 .artwork-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 20px 50px rgba(255, 59, 106, 0.4);
+    box-shadow: 0 20px 50px rgba(var(--art-pink-rgb), 0.4);
     border-color: var(--art-pink);
 }
 
@@ -1136,7 +1138,7 @@ footer {
     padding: 40px;
     border: 2px solid var(--art-pink);
     border-radius: 16px;
-    background: linear-gradient(135deg, rgba(255, 59, 106, 0.05), rgba(139, 92, 246, 0.05));
+    background: linear-gradient(135deg, rgba(var(--art-pink-rgb), 0.05), rgba(139, 92, 246, 0.05));
 }
 
 .upcoming-box i {
